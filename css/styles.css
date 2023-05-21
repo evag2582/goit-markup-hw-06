@@ -181,7 +181,7 @@ section {
   cursor: pointer;
   letter-spacing: 0.06em;
   color: var(--brand3-color);
-    border: none;
+  border: none;
 }
 .bgbutton1 {
   width: auto;
@@ -276,7 +276,9 @@ section {
 .modal-form-input:focus,
 .modal-form-input:hover,
 textarea:hover,
-textarea:focus {
+textarea:focus,
+.boton-suscrib:hover,
+.boton-suscrib:focus {
   border: 1px solid var(--brand2-color);
 }
 .modal-form-svg {
@@ -298,7 +300,7 @@ textarea:focus {
   fill: var(--brand2-color);
 }
 .modal-close:hover,
-.modal-close:focus {
+.modal-close:focus{
   fill: var(--brand2-color);
 }
 .modal-form-input-group {
@@ -398,6 +400,7 @@ input[type='checkbox']:checked:after {
   cursor: pointer;
   margin: 8px;
   padding: 6px 6px;
+  border: none;
 }
 .text {
   font-style: normal;
@@ -431,6 +434,58 @@ input[type='checkbox']:checked:after {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+}
+.suscrib {
+  position: relative;
+  width: 275px;
+  height: 16px;
+  left: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand3-color);
+  margin-left: 40px;
+}
+.modal-form-input-suscrib {
+  position: relative;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 45px 15px 16px;
+  background-color: var(--brand5-color);
+  margin-left: 40px;
+}
+.boton-suscrib{
+position: absolute;
+  width: 200px;
+  height: 50px;
+  background: var(--brand2-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+    font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      color: var(--brand3-color);
+      padding: 10px;
+}
+.boton-suscrib-svg{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+    left: 75.31%;
+    right: 15.19%;
+    background: var(--brand2-color);
 }
 .bgcolor {
   background-color: #f5f4fa;
