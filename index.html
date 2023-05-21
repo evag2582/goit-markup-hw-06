@@ -48,10 +48,60 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-close" data-modal-close>
-                    <svg class="icon4">
+                    <svg class="modal-form-svg-close">
                       <use href="./images/svg/icons.svg#close"></use>
                     </svg>
               </button>
+              <h3 class="title-modal">Deje sus datos, nos contactaremos con usted</h3>
+
+              <form>
+                <label class="name" for="input-name">
+                  Nombre
+                </label>
+                <div class="modal-form-input-group">
+                <input class="modal-form-input" type="text" name="name" id="input-name" required placeholder="Ingresa tu nombre">
+                <svg class="modal-form-svg">
+                  <use href="./images/svg/icons.svg#persona-negra"></use>
+                </svg>
+                </div>
+                
+                <label class="name" for="input-telefono">
+                  Teléfono
+                </label>
+                <div class="modal-form-input-group">
+                <input class="modal-form-input" type="number" name="telefono" id="input-telefono" required placeholder="Ingresa tu telefono">
+                <svg class="modal-form-svg">
+                  <use href="./images/svg/icons.svg#tel-negro"></use>
+                </svg>
+                </div>
+
+                <label class="name" for="input-email">
+                  Email
+                </label>
+                <div class="modal-form-input-group">
+                <input class="modal-form-input" type="email" name="email" id="input-email" required placeholder="Ingresa tu correo">
+                <svg class="modal-form-svg">
+                  <use href="./images/svg/icons.svg#email"></use>
+                </svg>
+                </div>
+
+                <label class="name" for="input-coment">
+                  Comentarios
+                </label>
+                <div class="modal-form-input-group">
+                <textarea rows="5" name="coment" id="input-coment" placeholder="Ingresa el texto" class="modal-form-textarea">
+                </textarea>
+                </div>
+                
+                <div class="content-checkbox">
+                  <input type="checkbox" name="input-checkbox" value="terminos">
+                <label class="check" for="input-checkbox">
+                    Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones.
+                </label>
+                </div>
+                <button class="form-button" type="submit">Enviar</button>
+              </form>
+
             </div>
           </div>
         </section>

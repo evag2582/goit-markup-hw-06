@@ -156,7 +156,7 @@ section {
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
-  line-height: aut;
+  line-height: auto;
   /* or 136% */
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -181,6 +181,7 @@ section {
   cursor: pointer;
   letter-spacing: 0.06em;
   color: var(--brand3-color);
+    border: none;
 }
 .bgbutton1 {
   width: auto;
@@ -200,12 +201,13 @@ section {
   position: absolute;
   width: 528px;
   height: 581px;
-  top: 20%;
+  top: 10%;
   background-color: var(--brand3-color);
   opacity: 1px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 .backdrop {
   position: absolute;
@@ -224,11 +226,165 @@ section {
   width: 30px;
   height: 30px;
   left: 496px;
+  top: 1px;
   background-color: var(--brand3-color);
-  border: 0 solid rgba(0, 0, 0, 0.1);
-  fill: var(--brand3-color);
-  padding-top: 9px;
-  padding-right:9px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding-top: 6px;
+  padding-left: 5px;
+  align-items: center;
+}
+.title-modal {
+  width: 448px;
+  height: 23px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  text-transform: none;
+}
+.name {
+  display: flex;
+  width: 44px;
+  height: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: var(--brand4-color);
+  text-transform: none;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 4px;
+}
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 40px;
+  font-size: 50%;
+}
+.modal-form-input:focus,
+.modal-form-input:hover,
+textarea:hover,
+textarea:focus {
+  border: 1px solid var(--brand2-color);
+}
+.modal-form-svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.modal-form-svg-close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+.modal-form-input:hover + .modal-form-svg,
+.modal-form-input:focus + .modal-form-svg {
+  fill: var(--brand2-color);
+}
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--brand2-color);
+}
+.modal-form-input-group {
+  position: relative;
+}
+textarea {
+  resize: none;
+  font-family: inherit;
+  font-size: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.modal-form-textarea {
+  width: 100%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.check {
+  display: flex;
+  width: 400.62px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: var(--brand4-color);
+  text-align: justify;
+}
+.content-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 25px;
+}
+input[type='checkbox']:checked {
+  background: var(--brand2-color);
+  color: white;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: lightgray;
+  height: 15px;
+  width: 16px;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type='checkbox']:after {
+  content: ' ';
+  position: relative;
+  left: 30%;
+  width: 50%;
+  height: 100%;
+  border: solid var(--brand3-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(50deg);
+  display: none;
+}
+
+input[type='checkbox']:checked:after {
+  display: block;
+}
+.form-button {
+  padding: 10px 75px 10px 75px;
+  color: var(--brand3-color);
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 50%;
+  border: none;
 }
 .buttons {
   font-style: normal;
