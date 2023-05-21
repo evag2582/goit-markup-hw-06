@@ -277,8 +277,8 @@ section {
 .modal-form-input:hover,
 textarea:hover,
 textarea:focus,
-.boton-suscrib:hover,
-.boton-suscrib:focus {
+.modal-form-input-suscrib:hover,
+.modal-form-input-suscrib:focus {
   border: 1px solid var(--brand2-color);
 }
 .modal-form-svg {
@@ -451,6 +451,7 @@ input[type='checkbox']:checked:after {
   margin-left: 40px;
 }
 .modal-form-input-suscrib {
+  box-sizing: border-box;
   position: relative;
   width: 358px;
   height: 50px;
