@@ -300,7 +300,7 @@ textarea:focus,
   fill: var(--brand2-color);
 }
 .modal-close:hover,
-.modal-close:focus{
+.modal-close:focus {
   fill: var(--brand2-color);
 }
 .modal-form-input-group {
@@ -439,7 +439,7 @@ input[type='checkbox']:checked:after {
   position: relative;
   width: 275px;
   height: 16px;
-  left: 0;
+  left: 10%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -449,44 +449,47 @@ input[type='checkbox']:checked:after {
   text-transform: uppercase;
   color: var(--brand3-color);
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 .modal-form-input-suscrib {
   box-sizing: border-box;
   position: relative;
   width: 358px;
   height: 50px;
+  left: 10%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 45px 15px 16px;
   background-color: var(--brand5-color);
   margin-left: 40px;
+  
 }
-.boton-suscrib{
-position: absolute;
+.boton-suscrib {
+  position: absolute;
   width: 200px;
   height: 50px;
   background: var(--brand2-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin-left: 12px;
-    font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 30px;
-      letter-spacing: 0.06em;
-      color: var(--brand3-color);
-      padding: 10px;
+  margin-left: 52px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--brand3-color);
+  padding: 10px;
 }
-.boton-suscrib-svg{
+.boton-suscrib-svg {
   position: absolute;
   width: 24px;
   height: 24px;
-    left: 75.31%;
-    right: 15.19%;
-    background: var(--brand2-color);
+  left: 75.31%;
+  right: 15.19%;
+  background: var(--brand2-color);
 }
 .bgcolor {
   background-color: #f5f4fa;
@@ -628,6 +631,7 @@ position: absolute;
   width: 44px;
   height: 44px;
   justify-content: center;
+  margin-right: 2px;
 }
 .title-redes {
   align-items: center;
@@ -643,15 +647,13 @@ position: absolute;
   margin-left: 30%;
 }
 .icon3 {
-
   display: inherit;
-    left: 60px;
-      right: -0.16%;
+  left: 60px;
+  right: -0.16%;
   justify-content: center;
   align-items: center;
   width: 22px;
   height: 22px;
-  left: ;
   fill: var(--brand3-color);
 }
 .social-container2:hover {
