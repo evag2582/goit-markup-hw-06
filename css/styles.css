@@ -534,6 +534,7 @@ input[type='checkbox']:checked:after {
   padding: 0 15px;
   width: 1200px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 .container-footer {
   display: flex;
@@ -795,8 +796,7 @@ input[type='checkbox']:checked:after {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--brand3-color);
+  padding-top: 10px;
 }
