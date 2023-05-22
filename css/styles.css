@@ -465,7 +465,20 @@ input[type='checkbox']:checked:after {
   padding: 15px 45px 15px 16px;
   background-color: var(--brand5-color);
   margin-left: 40px;
-  
+}
+.modal-form-input-suscrib2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  left: 50%;
+  top: 1717px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 45px 15px 16px;
+  background-color: var(--brand5-color);
+  margin-left: 40px;
 }
 .boton-suscrib {
   position: relative;
