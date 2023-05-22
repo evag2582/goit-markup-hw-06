@@ -436,10 +436,10 @@ input[type='checkbox']:checked:after {
   color: var(--brand-color);
 }
 .suscrib {
-  position: relative;
+  position: absolute;
   width: 275px;
   height: 16px;
-  left: 10%;
+  left: 50%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -448,15 +448,17 @@ input[type='checkbox']:checked:after {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand3-color);
+  margin-top: 15px;
   margin-left: 40px;
   margin-bottom: 20px;
 }
 .modal-form-input-suscrib {
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
   width: 358px;
   height: 50px;
-  left: 10%;
+  left: 50%;
+  top:2780px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -466,9 +468,11 @@ input[type='checkbox']:checked:after {
   
 }
 .boton-suscrib {
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 50px;
+  left: 465px;
+  top:40px;
   background: var(--brand2-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -644,6 +648,7 @@ input[type='checkbox']:checked:after {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand3-color);
+  padding-top: 15px;
   margin-bottom: 10px;
   margin-left: 30%;
 }
